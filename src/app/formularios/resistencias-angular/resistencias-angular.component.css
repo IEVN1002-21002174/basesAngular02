@@ -1,0 +1,12 @@
+*{
+  font-weight: bolder;
+  color: #fff;
+}
+:root{
+  --c1: #fff;
+}
+table{
+  border: 5px;
+  
+}
+

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  background-image: url('https://thebrandinquirer.wordpress.com/wp-content/uploads/2019/07/1-cinepolis-nuevo-redisencc83o-new-logo-redesign-2019-brand-my-f-opinion-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #0d2c54;
+  border-radius: 8px;
+}
+

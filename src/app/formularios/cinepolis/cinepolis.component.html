@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinépolis</title>
+</head>
+
+<body>
+  <div class="cinepolis-container">
+
+    <h1 class="text-center mb-4" style="font-weight: bold;">Cinepolis</h1>
+
+    <form action="">
+      <div class="row">
+
+        <div class="col-md-6 d-flex flex-column">
+          <fieldset class="custom-fieldset flex-grow-1">
+            <legend class="px-2">Entradas</legend>
+
+            <div class="row mb-3 align-items-center">
+              <label for="nombre" class="col-sm-5 col-form-label">Nombre</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" name="nombre">
+              </div>
+            </div>
+
+            <div class="row mb-3 align-items-center">
+              <label for="cantidad" class="col-sm-5 col-form-label">Cantidad Compradores</label>
+              <div class="col-sm-7">
+                <input type="number" class="form-control" id="cantidad" [(ngModel)]="cantidad" name="cantidad" min="0">
+              </div>
+            </div>
+
+            <div class="row mb-3 align-items-center">
+              <label class="col-sm-5 col-form-label">Tarjeta Cineco</label>
+              <div class="col-sm-7">
+                <div class="d-flex">
+                  <div class="form-check me-4">
+                    <input class="form-check-input" type="radio" id="tarjetaSi" value="si" [(ngModel)]="op"
+                      name="operacion">
+                    <label class="form-check-label" for="tarjetaSi">Si</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" value="no" [(ngModel)]="op" name="operacion">
+                    <label class="form-check-label" for="tarjetaNo">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row align-items-center">
+              <label for="boletos" class="col-sm-5 col-form-label">Cantidad de Boletos</label>
+              <div class="col-sm-7">
+                <input type="number" class="form-control" id="boletos" [(ngModel)]="boletos" name="boletos" min="0">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column">
+
+          <fieldset class="custom-fieldset">
+            <legend class="px-2">Salidas</legend>
+            <div class="row align-items-center">
+              <label for="valorPagar" class="col-sm-5 col-form-label">Valor a Pagar</label>
+              <div class="col-sm-7">
+                <input type="text" readonly class="form-control" id="valorPagar"
+                  [value]="this.resultado | currency:'$'">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="custom-fieldset">
+            <legend class="px-2">Acciones</legend>
+            <div class="d-flex justify-content-around">
+              <button type="button" class="btn btn-primary" (click)="Pagar()">Procesar</button>
+              <button type="button" class="btn btn-primary">Salir</button>
+            </div>
+          </fieldset>
+
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

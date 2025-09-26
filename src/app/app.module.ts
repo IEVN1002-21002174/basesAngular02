@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { HeroeslistComponent } from './heroes/heroeslist/heroeslist.component';
 import { FormsModule } from '@angular/forms';
 import { HeroesFilterPipe } from './heroes/heroes-filter.pipe';
+import { OperaBasComponent } from './formularios/opera-bas/opera-bas.component';
+import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
+import { ResistenciasAngularComponent } from './formularios/resistencias-angular/resistencias-angular.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroeslistComponent,
-    HeroesFilterPipe
+    HeroesFilterPipe,
+    OperaBasComponent,
+    CinepolisComponent,
+    ResistenciasAngularComponent
   ],
   imports: [
     BrowserModule,

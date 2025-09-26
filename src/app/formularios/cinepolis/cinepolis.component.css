@@ -1,0 +1,42 @@
+
+.cinepolis-container {
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 2rem auto;
+  border: 3px solid #6c757d;
+}
+
+.custom-fieldset {
+  border: 2px solid white !important;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  height: 100%;
+}
+
+.custom-fieldset legend {
+  float: none;
+  width: auto;
+  padding: 0 10px;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 1rem 0;
+}
+input{
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
